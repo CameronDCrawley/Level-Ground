@@ -1,0 +1,299 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  color: #333;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+  background: rgb(105, 118, 137);
+  color: whitesmoke;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+header section {
+  margin: 0;
+  text-align: center;
+}
+
+.headerUl {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.headerB {
+  background: rgb(255, 255, 255);
+  color: rgb(105, 118, 136);
+  border: 0.5px solid black;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.headerI {
+  height: 40px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ==========================================================================
+   3. HERO / MAIN SECTION
+   ========================================================================== */
+main {
+  background: rgb(105, 118, 137);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.25rem;
+  min-height: 350px;
+  background-image: url(mma.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+main > section {
+  max-width: 700px;
+  width: 100%;
+}
+
+main > section > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main > section > p {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ==========================================================================
+   4. WHY SECTION
+   ========================================================================== */
+.whyS {
+  padding: 3rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.whyS > section {
+  max-width: 700px;
+  width: 100%;
+}
+
+section.whyS > section > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section.whyS > section > p {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   5. SERVICES SECTION
+   ========================================================================== */
+.servicesS {
+  background: rgb(220, 223, 226);
+  padding: 3rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.service1,
+.service2 {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section.servicesS > section.service1 > p,
+section.servicesS > section.service2 > p {
+  width: 100%;
+  margin: 0;
+}
+
+section.servicesS > section.service1 > span,
+section.servicesS > section.service2 > span {
+  border: 0.5px solid black;
+  width: 100%;
+  font-size: 1.1rem;
+  color: rgb(105, 118, 137);
+  padding: 0.5rem;
+  text-align: center;
+  display: block;
+}
+
+span.blueBox {
+  background-color: rgb(105, 118, 137);
+  padding: 1rem;
+  display: block;
+}
+
+/* ==========================================================================
+   6. VOLUNTEER SECTION
+   ========================================================================== */
+section.volunteerS {
+  padding: 3rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.volunteerS > section {
+  max-width: 700px;
+  width: 100%;
+}
+
+section.volunteerS > section > h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+section.volunteerS > section > p {
+  width: 100%;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+section.volunteerS > section > span {
+  border: 0.5px solid black;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.1rem;
+  color: rgb(105, 118, 137);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.otherImg {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 1.5rem auto 0 auto;
+  display: block;
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer {
+  background: rgb(24, 31, 41);
+  color: white;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer > section:nth-child(1) > nav {
+  width: 100%;
+}
+
+.footerLCon {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footerL,
+.footerL2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerH {
+  color: rgb(105, 118, 137);
+  margin-bottom: 0.5rem;
+}
+
+footer > p {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* ==========================================================================
+   8. DESKTOP MEDIA QUERY (768px and up)
+   ========================================================================== */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+  }
+
+  .headerUl {
+    gap: 3em;
+  }
+
+  .servicesS {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .service1,
+  .service2 {
+    width: 45%;
+  }
+
+  .footerLCon {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
